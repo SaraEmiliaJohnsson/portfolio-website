@@ -1,0 +1,37 @@
+@import "../../App.scss";
+
+.mobile-menu--container {
+	padding: 20px;
+}
+
+.mobile-list--container {
+	display: flex;
+	flex-direction: column;
+	// Remove list bullet points
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.mobile-list-item {
+	padding: 5px;
+	margin-bottom: 15px;
+}
+
+// Styling for the links
+.mobile-list-item a {
+	// Remove underline
+	text-decoration: none;
+	color: var(--a--color);
+	font-size: 18px;
+	font-weight: bold;
+}
+
+a.dark-theme {
+	color: var(--dark-mode-a-color);
+}
+
+// Hover effect for the links
+.mobile-list-item a:hover {
+	color: rgb(119, 34, 184);
+}

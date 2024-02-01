@@ -1,0 +1,33 @@
+@import "../../App.scss";
+
+.footer--container {
+	background-color: var(--secondary-background-color);
+	padding: 10px;
+	font-style: italic;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	.footer--link__container {
+		width: 100px;
+		display: flex;
+		justify-content: space-around;
+		.github-logo {
+			height: 40px;
+			width: 40px;
+			border-radius: 50px;
+		}
+		.linkedin-logo {
+			height: 40px;
+			width: 40px;
+			border-radius: 50px;
+		}
+	}
+}
+
+.footer--container.dark-theme {
+	background-color: var(--dark-mode-secondary-background-color);
+}

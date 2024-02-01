@@ -1,0 +1,26 @@
+.header-container {
+  background-color: rgb(7, 7, 105);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container {
+  color: white;
+  border: 2px solid white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-container {
+  display: flex;
+}
+
+.list-item {
+  color: white;
+  list-style: none;
+  padding: 5px;
+}/*# sourceMappingURL=HeaderComponent.css.map */

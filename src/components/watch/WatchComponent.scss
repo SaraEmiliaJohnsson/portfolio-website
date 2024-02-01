@@ -1,0 +1,11 @@
+@import "../darkmode/darkMode.scss";
+
+.time--container {
+	width: 110px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	border: 2px solid rgb(198, 14, 158);
+}

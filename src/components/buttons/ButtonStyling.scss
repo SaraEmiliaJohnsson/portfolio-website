@@ -1,0 +1,26 @@
+.personality--btn {
+	height: 50px;
+	width: 400px;
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	justify-content: space-between;
+}
+
+.styling-btn {
+	width: 150px;
+	height: 35px;
+	margin: 5px;
+	background-color: rgb(198, 14, 158);
+	color: white;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3px;
+	border: 1px solid rgb(245, 164, 254);
+}
+
+.personality--text {
+	padding: 10px;
+}

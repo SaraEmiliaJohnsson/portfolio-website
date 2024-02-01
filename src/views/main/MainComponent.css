@@ -1,0 +1,43 @@
+.main {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main--inside__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main--first__container {
+  background-color: rgb(7, 7, 105);
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.main--second__container {
+  background-color: rgb(7, 7, 105);
+  width: 400px;
+  height: 200px;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.main--sidebar {
+  background-color: rgb(7, 7, 105);
+  height: 410px;
+  width: 150px;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+li::marker {
+  color: aqua;
+}/*# sourceMappingURL=MainComponent.css.map */

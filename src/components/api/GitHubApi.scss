@@ -1,0 +1,98 @@
+@import "../../ResponsiveCSS.scss";
+
+.github-api__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 1800px;
+	@include respond-to(tablet) {
+		height: 2100px;
+	}
+	@include respond-to(mobile) {
+		height: 1540px;
+	}
+}
+
+.github-api-inside__container {
+	padding: 20px;
+	background-color: rgba(160, 103, 203, 0.459);
+	margin-top: 50px;
+	padding: 25px;
+	width: 65%;
+	height: auto;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	@include respond-to(mobile) {
+		width: 300px;
+		height: auto;
+	}
+
+	align-items: center;
+
+	h1 {
+		padding: 10px;
+	}
+}
+
+.project-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.project-card {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	@include respond-to(tablet) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	@include respond-to(mobile) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.project-link {
+	background-color: rgb(198, 14, 158);
+	border: 1px solid rgb(245, 164, 254);
+	width: 300px;
+	height: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+	@include respond-to(mobile) {
+		width: 170px;
+		height: 35;
+		font-size: small;
+	}
+
+	&:hover {
+		background-color: #d10dce;
+		color: white;
+	}
+}
+
+.project-image {
+	max-width: 40%;
+	height: auto;
+	margin-top: 10px;
+	border-radius: 5px;
+	@include respond-to(tablet) {
+		max-width: 84%;
+	}
+	@include respond-to(mobile) {
+		max-width: 84%;
+	}
+}

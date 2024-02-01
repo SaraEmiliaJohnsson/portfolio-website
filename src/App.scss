@@ -1,0 +1,76 @@
+@import "./ResponsiveCSS.scss";
+
+// Root variables for light and dark mode colors
+:root {
+	// Light mode colors
+	--primary-background-color: rgb(249, 179, 255);
+	--secondary-background-color: rgb(252, 148, 236);
+	--text-color: black;
+	--border-color: 2px solid black;
+	--font-family: "Brush Script MT", sans-serif;
+	--a-color: black;
+
+	// Dark mode colors
+	--dark-mode-primary-background-color: rgb(49, 49, 139);
+	--dark-mode-secondary-background-color: rgb(7, 7, 105);
+	--dark-mode-text-color: #ffffff;
+	--dark-mode-border-color: 2px solid #ffffff;
+	--dark-mode-a-color: #ffffff;
+}
+
+// Reset default styles for all elements
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: o;
+}
+
+// Body styles for light and dark mode
+body {
+	background-color: var(--primary-background-color);
+	color: var(--text-color);
+	font-size: var(--font-family);
+}
+
+body.dark-theme {
+	background-color: var(--dark-mode-primary-background-color);
+	color: var(--dark-mode-text-color);
+}
+
+// Main container styles for light and dark mode
+.main--container {
+	background-color: var(--primary-background-color);
+	width: 100vw;
+	height: 100vh;
+}
+
+.main--container.dark-theme {
+	background-color: var(--dark-mode-primary-background-color);
+	width: 100vw;
+	height: 100vh;
+}
+
+// Anchor (link) styles for light and dark mode
+a {
+	text-decoration: none;
+	font-size: 34;
+	font-weight: 800;
+	color: var(--a-color);
+}
+
+a.dark-theme {
+	color: var(--dark-mode-a-color);
+}
+
+// Hover styles for links in light and dark mode
+a:hover {
+	color: rgb(119, 34, 184);
+	font-size: larger;
+	-webkit-text-stroke: 0.2px white;
+}
+
+a:hover.dark-theme {
+	color: rgb(3, 3, 27);
+	font-size: larger;
+	-webkit-text-stroke: 0.2px white;
+}

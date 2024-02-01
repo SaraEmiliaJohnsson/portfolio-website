@@ -1,0 +1,33 @@
+.contact--container {
+	margin-top: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.contact--inside__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(160, 103, 203, 0.459);
+		margin-top: 50px;
+		padding: 15px;
+		width: 350px;
+		height: 400px;
+		border-radius: 5px;
+	}
+}
+
+form {
+	width: 350px;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 25px;
+	position: relative;
+	.form--btn {
+		text-align: center;
+		margin-top: 10px;
+	}
+}

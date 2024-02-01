@@ -1,0 +1,57 @@
+@import "../../ResponsiveCSS.scss";
+
+@import "../../App.scss";
+
+.header--container {
+	background-color: var(--secondary-background-color);
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 5;
+
+	@include respond-to(tablet) {
+		justify-content: space-around;
+	}
+
+	.list-item {
+		@include respond-to(mobile) {
+			display: none;
+		}
+	}
+
+	.logo--container {
+		border: var(--border-color);
+		width: 50px;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.list--container {
+		display: flex;
+		.list-item {
+			list-style: none;
+			padding: 5px;
+		}
+	}
+}
+
+.header--container.dark-theme {
+	background-color: var(--dark-mode-secondary-background-color);
+	.logo--container {
+		border: 2px solid white;
+	}
+}
+
+.hamburger-menu-icon {
+	@include respond-to(desktop) {
+		display: none;
+	}
+	@include respond-to(tablet) {
+		display: none;
+	}
+}

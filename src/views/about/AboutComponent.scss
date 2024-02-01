@@ -1,0 +1,69 @@
+@import "../../App.scss";
+@import "../../ResponsiveCSS.scss";
+
+.about--container {
+	margin-top: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	h2,
+	h4 {
+		text-decoration: underline;
+	}
+
+	.about--inside__container-one {
+		background-color: rgba(160, 103, 203, 0.459);
+		margin-top: 50px;
+		padding: 25px;
+		width: 70%;
+		height: auto;
+		border-radius: 5px;
+		line-height: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		position: relative;
+	}
+}
+
+.about--inside__container-two {
+	background-color: rgba(160, 103, 203, 0.459);
+	margin-top: 50px;
+	padding: 25px;
+	width: 60%;
+	height: 100px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: relative;
+	@include respond-to(mobile) {
+		width: 330px;
+	}
+	.personality--btn__container {
+		position: absolute;
+		bottom: 0;
+		margin: 10px;
+		.personality--btn {
+			display: flex;
+			align-items: baseline;
+			margin: 20px;
+		}
+	}
+}
+
+.about--inside__container-three {
+	background-color: rgba(160, 103, 203, 0.459);
+	margin-top: 50px;
+	margin-bottom: 100px;
+	padding: 25px;
+	width: 70%;
+	height: auto;
+	border-radius: 5px;
+	line-height: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: relative;
+}
